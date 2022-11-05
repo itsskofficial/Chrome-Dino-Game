@@ -13,7 +13,7 @@ pyautogui.press('space')
 t=30
 
 while t:
-    screen=driver.find_element_by_class_name('')driver.save_screenshot('screen.png')
+    screen=driver.find_element_by_class_name('runner-container')driver.save_screenshot('screen.png')
     sleep(1)
     t-=1
 
