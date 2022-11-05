@@ -14,6 +14,7 @@ t=30
 
 while t:
     pyautogui.press('space')
-    time.sleep(1)
+    sleep(1)
+    t-=1
 
 driver.quit()
