@@ -14,7 +14,7 @@ def isCollision(data):
     for i in range(530, 620):
         for j in range(130, 160):
             if data[i, j] < 100:
-                click("up")
+                pyautogui.press("space")
                 return
     return
 
