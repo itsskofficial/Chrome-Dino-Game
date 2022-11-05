@@ -12,6 +12,6 @@ sleep(2)
 pyautogui.press('space')
 
 while True:
-    
+    pyt
 
 driver.quit()
