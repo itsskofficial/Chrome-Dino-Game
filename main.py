@@ -8,7 +8,7 @@ def isCollision(data):
     for i in range(530,560):
         for j in range(80, 127):
             if data[i, j] < 171:
-                click("down")
+                pyautogui.press("down")
                 return
  # Check colison for cactus
     for i in range(530, 620):
