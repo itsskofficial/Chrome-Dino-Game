@@ -6,4 +6,5 @@ service = Service(executable_path="D:/Skills/Python/Projects/Google Meet Bot/Chr
 driver = webdriver.Chrome(service=service)
 
 driver.get('https://chromedino.com/')
-sleep()
+sleep(2)
+
