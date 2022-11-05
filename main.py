@@ -24,7 +24,7 @@ def isCollision(data):
 
 
 time.sleep(5)
-pytuogui.click('up') 
+pytuogui.press('up') 
 t=30
 while t:
     image = ImageGrab.grab().convert('L')  
