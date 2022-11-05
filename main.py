@@ -2,7 +2,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium import webdriver
 from time import *
 import pyautogui
-import PIL
+from P
 
 service = Service(executable_path="D:/Skills/Python/Projects/Google Meet Bot/ChromeDrivers/win32/chromedriver.exe")
 driver = webdriver.Chrome(service=service)
