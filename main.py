@@ -20,6 +20,7 @@ def isCollision(data):
 time.sleep(5)
 pyautogui.press('up') 
 t=30
+
 while t:
     image = ImageGrab.grab().convert('L')  
     data = image.load()
