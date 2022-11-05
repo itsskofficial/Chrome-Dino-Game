@@ -4,7 +4,7 @@ from time import *
 import pyautogui
 import PIL
 
-service = Service(executable_path="D:/Skills/Python/Projects/Google Meet Bot/ChromeDrivers/win32/")
+service = Service(executable_path="D:/Skills/Python/Projects/Google Meet Bot/ChromeDrivers/win32/chromedriver.exe")
 driver = webdriver.Chrome(service=service)
 
 driver.get('https://chromedino.com/')
