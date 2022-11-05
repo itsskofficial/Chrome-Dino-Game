@@ -13,7 +13,7 @@ pyautogui.press('space')
 t=30
 
 while t:
-    screen=ImageGrab.grab(bbox=())
+    screen=ImageGrab.grab(bbox=(0,0,300,300))
     sleep(1)
     t-=1
 
