@@ -9,12 +9,13 @@ def isCollision(data):
             if data[i, j] < 171:
                 pyautogui.press("down")
                 return 
-                
+
     for i in range(530, 620):
         for j in range(130, 160):
             if data[i, j] < 100:
                 pyautogui.press("space")
-                return None
+                return 
+    return
 
 
 time.sleep(5)
