@@ -9,7 +9,7 @@ driver = webdriver.Chrome(service=service)
 
 driver.get('https://chromedino.com/')
 sleep(2)
-pyautogui.
+pyautogui.press('space')
 while True:
 
 
