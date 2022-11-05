@@ -13,7 +13,7 @@ pyautogui.press('space')
 t=30
 
 while t:
-    screen=ImageGrab.grab(bbox=(0,0,300,300))
+    screen=driver.save_screenshot()
     screen.save(fp='screen.png')
     sleep(1)
     t-=1
