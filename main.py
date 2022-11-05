@@ -4,4 +4,4 @@ from selenium import webdriver
 service = Service(executable_path="D:/Skills/Python/Projects/Google Meet Bot/ChromeDrivers/win32")
 driver = webdriver.Chrome(service=service)
 
-driver.get('ht')
+driver.get('https://chromedino.com/')
