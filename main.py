@@ -25,8 +25,8 @@ def isCollision(data):
 
 time.sleep(5)
 click('up') 
-
-while True:
+t=30
+while t:
     image = ImageGrab.grab().convert('L')  
     data = image.load()
     isCollision(data)
