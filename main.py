@@ -1,5 +1,5 @@
 import pyautogui 
-from PIL import Image, ImageGrab 
+from PIL import ImageGrab 
 import time
 
 
@@ -9,7 +9,7 @@ def isCollision(data):
             if data[i, j] < 171:
                 pyautogui.press("down")
                 return None
-                
+
     for i in range(530, 620):
         for j in range(130, 160):
             if data[i, j] < 100:
