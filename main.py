@@ -26,6 +26,7 @@ while t:
     image = ImageGrab.grab().convert('L')  
     data = image.load()
     isCollision(data)
+    t-=1
         
         # # Draw the rectangle for cactus
         # for i in range(530, 610):
