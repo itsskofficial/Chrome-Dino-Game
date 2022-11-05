@@ -1,4 +1,4 @@
-import pyautogui # pip install pyautogui
+import pyautogui 
 from PIL import Image, ImageGrab 
 import time
 
