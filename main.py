@@ -1,11 +1,7 @@
 import pyautogui # pip install pyautogui
 from PIL import Image, ImageGrab # pip install pillow
-# from numpy import asarray
 import time
 
-def click(key):
-    pyautogui.keyDown(key)
-    return
 
 def isCollision(data):
 # Check colison for birds
