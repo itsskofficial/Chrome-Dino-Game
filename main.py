@@ -23,13 +23,13 @@ def isCollision(data):
     return
 
 
-    time.sleep(5)
-    click('up') 
-    
-    while True:
-        image = ImageGrab.grab().convert('L')  
-        data = image.load()
-        isCollision(data)
+time.sleep(5)
+click('up') 
+
+while True:
+    image = ImageGrab.grab().convert('L')  
+    data = image.load()
+    isCollision(data)
         
         # # Draw the rectangle for cactus
         # for i in range(530, 610):
