@@ -8,4 +8,6 @@ driver = webdriver.Chrome(service=service)
 driver.get('https://chromedino.com/')
 sleep(2)
 
+while 
+
 driver.quit()
