@@ -8,8 +8,8 @@ def isCollision(data):
         for j in range(80, 127):
             if data[i, j] < 171:
                 pyautogui.press("down")
-                return None
-
+                return 
+                
     for i in range(530, 620):
         for j in range(130, 160):
             if data[i, j] < 100:
