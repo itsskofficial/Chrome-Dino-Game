@@ -14,7 +14,6 @@ def isCollision(data):
             if data[i, j] < 100:
                 pyautogui.press("space")
                 return None
-    return
 
 
 time.sleep(5)
