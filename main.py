@@ -28,14 +28,3 @@ while t:
     isCollision(data)
     t-=1
         
-        # # Draw the rectangle for cactus
-        # for i in range(530, 610):
-        #     for j in range(130, 160):
-        #          data[i, j] = 0
-        
-        # # # Draw the rectangle for birds
-        # for i in range(530, 560):
-        #     for j in range(100, 125):
-        #         data[i, j] = 171
-
-        # image.show(
