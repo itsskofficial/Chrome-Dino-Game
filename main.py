@@ -11,7 +11,7 @@ driver.get('https://chromedino.com/')
 sleep(2)
 pyautogui.press('space')
 
-while True:
+while t:
     pyautogui.press('space')
 
 driver.quit()
