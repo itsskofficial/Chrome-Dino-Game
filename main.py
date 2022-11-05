@@ -1,23 +1,44 @@
-from selenium.webdriver.chrome.service import Service
-from selenium import webdriver
-from time import *
-import pyautogui
-from PIL import ImageGrab,Image
+import pyautogui # pip install pyautogui
+from PIL import Image, ImageGrab # pip install pillow
+# from numpy import asarray
+import time
 
-service = Service(executable_path="D:/Skills/Python/Projects/Google Meet Bot/ChromeDrivers/win32/chromedriver.exe")
-driver = webdriver.Chrome(service=service)
+def click(key):
+    pyautogui.keyDown(key)
+    return
 
-driver.get('https://chromedino.com/')
-sleep(2)
-pyautogui.press('space')
-t=30
+def isCollision(data):
+# Check colison for birds
+    for i in range(530,560):
+        for j in range(80, 127):
+            if data[i, j] < 171:
+                click("down")
+                return
+ # Check colison for cactus
+    for i in range(530, 620):
+        for j in range(130, 160):
+            if data[i, j] < 100:
+                click("up")
+                return
+    return
 
-while t:
-    game=driver.find_element_by_class_name('runner-container')
-    game.screenshot('screen.png')
-    img=Image.open('screen.png').convert('L')
+if __name__ == "__main__":
+    time.sleep(5)
+    click('up') 
     
-    sleep(1)
-    t-=1
+    while True:
+        image = ImageGrab.grab().convert('L')  
+        data = image.load()
+        isCollision(data)
+        
+        # # Draw the rectangle for cactus
+        # for i in range(530, 610):
+        #     for j in range(130, 160):
+        #          data[i, j] = 0
+        
+        # # # Draw the rectangle for birds
+        # for i in range(530, 560):
+        #     for j in range(100, 125):
+        #         data[i, j] = 171
 
-driver.quit()
+        # image.show(
