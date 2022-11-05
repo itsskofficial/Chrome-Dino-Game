@@ -15,6 +15,7 @@ t=30
 while t:
     game=driver.find_element_by_class_name('runner-container')
     game.screenshot('screen.png')
+    
     sleep(1)
     t-=1
 
