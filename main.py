@@ -14,7 +14,7 @@ t=30
 
 while t:
     screen=ImageGrab.grab(bbox=(0,0,300,300))
-    screen.save(fp=)
+    screen.save(fp='scree')
     sleep(1)
     t-=1
 
