@@ -13,7 +13,7 @@ pyautogui.press('space')
 t=30
 
 while t:
-    screen=I
+    screen=
     sleep(1)
     t-=1
 
