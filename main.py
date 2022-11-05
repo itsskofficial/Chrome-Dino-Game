@@ -13,7 +13,7 @@ pyautogui.press('space')
 t=30
 
 while t:
-    dino_location=pyautogui.locateOnScreen(image='./static')
+    dino_location=pyautogui.locateOnScreen(image='./static/dino.png')
     pyautogui.press('space')
     sleep(1)
     t-=1
